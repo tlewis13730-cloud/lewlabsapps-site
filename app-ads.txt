@@ -1,0 +1,4 @@
+# Lew Labs Apps app-ads.txt placeholder
+# Before enabling production AdMob ads, replace this file with the exact app-ads.txt line shown in your AdMob account.
+# Example format only (DO NOT USE THIS PLACEHOLDER AS A REAL PUBLISHER ID):
+# google.com, pub-REPLACE_WITH_YOUR_PUBLISHER_ID, DIRECT, f08c47fec0942fa0
