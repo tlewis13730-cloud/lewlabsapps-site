@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Simple Family Games icon"><rect x="8" y="8" width="112" height="112" rx="30" fill="#ffe455" stroke="#17172f" stroke-width="9"/><path d="M29 38h20M39 28v20" stroke="#7557ff" stroke-width="9" stroke-linecap="round"/><circle cx="91" cy="38" r="11" fill="none" stroke="#ff3f96" stroke-width="9"/><circle cx="46" cy="70" r="6" fill="#17172f"/><circle cx="82" cy="70" r="6" fill="#17172f"/><path d="M39 87c7 10 15 14 25 14s18-4 25-14" fill="none" stroke="#17172f" stroke-width="8" stroke-linecap="round"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title description">
+  <title id="title">Simple Family Games Happy Game Box</title>
+  <desc id="description">A smiling purple game box opens to reveal a lime X, orange O, yellow star, and playful sparkles on a deep navy rounded square.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2B6A"/>
+      <stop offset=".55" stop-color="#061A4D"/>
+      <stop offset="1" stop-color="#03143D"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A654FF"/>
+      <stop offset=".55" stop-color="#7C2EF2"/>
+      <stop offset="1" stop-color="#5216BC"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="98" height="98" rx="23" fill="url(#background)"/>
+  <g fill="none" stroke="#FFD51D" stroke-linecap="round" stroke-width="4.2">
+    <path d="m11 62 5 3M10 72h6M89 64l6-3M90 73l6 2"/>
+  </g>
+  <path d="M18 53l7-25q1-5 6-7l29-9q6-2 8 4l-7 23-14 15Z" fill="url(#purple)" stroke="#04123A" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5"/>
+  <path d="m29 27 31-10" fill="none" stroke="#CE94FF" stroke-linecap="round" stroke-width="2.5"/>
+  <path d="m71 11 3 9h10l-8 6 3 10-8-6-8 6 3-10-8-6h10Z" fill="#FFD51D" stroke="#04123A" stroke-linejoin="round" stroke-width="5"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="m37 33 18 17M55 31 38 51" stroke="#04123A" stroke-width="14"/>
+    <path d="m37 33 18 17M55 31 38 51" stroke="#86F50B" stroke-width="9"/>
+    <path d="m42 33 5 5" stroke="#D8FF92" stroke-width="2.2"/>
+    <circle cx="72" cy="47" r="13" stroke="#04123A" stroke-width="10"/>
+    <circle cx="72" cy="47" r="13" stroke="#FF7614" stroke-width="7"/>
+    <path d="M64 40q4-5 9-4" stroke="#FFB066" stroke-width="2"/>
+    <path d="m61 34-3-6M86 32l6-9M88 46l7-6" stroke="#20CFFF" stroke-width="3.5"/>
+  </g>
+  <path d="m90 29 1 4 4 1-4 1-1 4-1-4-4-1 4-1Z" fill="#FFF"/>
+  <path d="M18 57q33-9 69-1l-3 32q-1 6-8 7l-47-4q-7-1-8-7Z" fill="url(#purple)" stroke="#04123A" stroke-linejoin="round" stroke-width="4.5"/>
+  <path d="M19 57q31-11 68-1l-5 9q-31-8-59 1Z" fill="#03143D" stroke="#B66CFF" stroke-linejoin="round" stroke-width="3"/>
+  <path d="m77 64 10-7-3 31q-1 5-8 7Z" fill="#5216BC" opacity=".72"/>
+  <g fill="none" stroke="#04123A" stroke-linecap="round" stroke-width="3.5">
+    <path d="M32 74q5-6 10 0M61 75q5-6 10 0"/>
+  </g>
+  <path d="M42 77q10 7 21 1-2 13-11 13-8-1-10-14Z" fill="#04123A"/>
+  <path d="M47 87q5-3 11 0-2 4-6 4-3-1-5-4Z" fill="#FF3B9D"/>
+</svg>
