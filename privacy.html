@@ -18,7 +18,7 @@
   <main id="main">
     <section class="page-hero"><div class="container"><span class="badge">Simple Checklist</span><h1>Privacy Policy</h1><p>What stays on your device, what optional features send for processing, and how advertising works.</p></div></section>
     <section class="section compact-section"><div class="container prose policy">
-      <p><strong>Last updated:</strong> October 5, 2026</p>
+      <p><strong>Draft update:</strong> October 18, 2026 — pending owner approval for publication.</p>
       <div class="notice">Simple Checklist's ordinary list data stays on your device. Optional AI Create tools send the photo, audio, or text you choose, along with technical request information, for processing. You review AI output before saving it.</div>
 
       <h2>1. Who this policy covers</h2>
@@ -39,6 +39,13 @@
       <h3>Describe a List</h3>
       <p>You may hold to record and release when finished, or type instead. A recording you choose to make is kept temporarily in app-private cache and sent securely through the Simple Checklist backend to OpenAI for transcription. The temporary AAC/M4A recording is cleaned up when the active flow ends, including after success, cancellation, or an error. You can review and edit the transcript. Only when you select <strong>Make My List</strong> is that text used for AI checklist generation. You then review the generated items before saving them.</p>
       <p>Avoid including sensitive information in a photo, recording, or typed description unless you want it processed for your list.</p>
+
+      <h2>Works with ChatGPT handoffs</h2>
+      <p>When you ask a connected Simple Checklist plugin to prepare a handoff, ChatGPT sends the selected checklist items and any suggested title or destination name to the separate Lew Labs MCP service. That service temporarily validates the input and encodes a link. It does not call an AI inference provider, maintain a checklist database or history, create a Simple Checklist account, read existing lists from your device, or synchronize devices.</p>
+      <p>Checklist content is processed in memory for the request, not saved as a checklist on our server or included in normal application logs. Service-specific Cloud Run request-log exclusion is configured; limited operational and security records remain. This is not a promise that cloud providers retain no technical metadata. ChatGPT and hosting providers process information under their own terms and retention practices. ChatGPT may retain relevant conversation context. This handoff is distinct from Scan and Describe processing above.</p>
+      <p>The resulting link contains Base64URL-encoded JSON. <strong>Encoding is not encryption: anyone with the complete link may decode its checklist content.</strong> Copies may remain in chats, messages, the clipboard or device/browser history. The fragment after # is not sent in a normal HTTP request to the fallback website, but the content was already sent to the MCP encoder. There is no server-side import token to expire or revoke; deleting a local list does not remove copies of its handoff link.</p>
+      <p>The app checks any suggested destination against local lists and requires you to review and explicitly approve an import. You can edit the suggestions, select another destination or cancel without changing lists. Current eligible mobile Pro access is required; the link does not grant access or prove who authored its contents. No Scan, Describe or transcription quota is consumed by the encoder. ChatGPT's own access and usage rules still apply.</p>
+      <p>Do not include credentials or unnecessary sensitive information in a handoff. Share complete links only with intended recipients. You can avoid the plugin, decline to share content, cancel an import, and manage local lists in the app. Contact us below with privacy questions; avoid sending complete private links to support.</p>
 
       <h2>5. Voluntary AI result reports</h2>
       <p>If you report an AI result, the report may include a bounded portion of the AI-generated result text, the reason you select, an optional comment, app version, report or request metadata, and timestamps. The original Scan photo and voice recording are not attached to these reports. We use reports to review safety and quality. Reports are configured with server-created 30-day time-to-live (TTL) eligibility. Firestore deletes expired reports asynchronously, so deletion may occur after that date.</p>
