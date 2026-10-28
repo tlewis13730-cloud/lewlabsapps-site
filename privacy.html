@@ -4,27 +4,28 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#303a48">
   <title>Simple Checklist Privacy Policy — Lew Labs Apps</title>
-  <meta name="description" content="How Simple Checklist handles local lists, optional AI Create content, advertising, and voluntary AI result reports.">
+  <meta name="description" content="How Simple Checklist handles local lists, ChatGPT handoffs, optional AI Create, advertising, and voluntary reports.">
   <meta property="og:type" content="article"><meta property="og:site_name" content="Lew Labs Apps">
   <meta property="og:title" content="Simple Checklist Privacy Policy">
-  <meta property="og:description" content="Clear information about local checklist storage, optional AI processing, ads, and reports.">
+  <meta property="og:description" content="Local checklist storage, optional ChatGPT and AI processing, your choices, ads, and reports.">
   <meta property="og:url" content="https://lewlabsapps.com/privacy.html">
   <link rel="canonical" href="https://lewlabsapps.com/privacy.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="checklist-policy-page">
   <a class="skip-link" href="#main">Skip to policy</a>
-  <header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L</span><span>Lew Labs Apps</span></a><nav class="nav-links" aria-label="Main navigation"><a href="index.html#apps">Apps</a><a href="simple-checklist.html">Simple Checklist</a><a href="https://simplefamilygames.com/">Simple Family Games</a><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a></nav></div></header>
+  <header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L</span><span>Lew Labs Apps</span></a><nav class="nav-links" aria-label="Main navigation"><a href="index.html#apps">Apps</a><a href="simple-checklist.html">Simple Checklist</a><a href="https://simplefamilygames.com/">Simple Family Games</a><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
   <main id="main">
     <section class="page-hero"><div class="container"><span class="badge">Simple Checklist</span><h1>Privacy Policy</h1><p>What stays on your device, what optional features send for processing, and how advertising works.</p></div></section>
     <section class="section compact-section"><div class="container prose policy">
-      <p><strong>Last updated:</strong> October 5, 2026</p>
-      <div class="notice">Simple Checklist's ordinary list data stays on your device. Optional AI Create tools send the photo, audio, or text you choose, along with technical request information, for processing. You review AI output before saving it.</div>
+      <p><strong>Effective date:</strong> October 27, 2026.</p>
+      <div class="notice">Simple Checklist's ordinary list data stays on your device. Optional AI Create tools send the photo, audio, or text you choose for processing. A connected ChatGPT handoff sends selected checklist text to our separate link service. Neither flow saves items to your checklist until you approve them.</div>
+      <p>Read about <a href="#local-data">local lists</a>, <a href="#ai-create">Pro AI Create</a>, <a href="#chatgpt">ChatGPT handoffs</a>, <a href="#advertising">advertising</a>, or <a href="#choices">your choices</a>. See also the <a href="terms.html">Terms of Service</a>.</p>
 
       <h2>1. Who this policy covers</h2>
-      <p>Lew Labs Apps (“we,” “us,” or “our”) provides Simple Checklist for Android. This policy describes the app and its informational website at lewlabsapps.com. <a href="https://simplefamilygames.com/privacy.html">Simple Family Games has its own privacy policy.</a></p>
+      <p>Lew Labs Apps LLC, an Arizona limited liability company operating as Lew Labs Apps (“we,” “us,” or “our”), provides Simple Checklist for Android. This policy covers its Free features, optional Pro AI features, connected ChatGPT checklist handoff service, and informational website at lewlabsapps.com. It does not replace the policies of ChatGPT, Google Play, or other services you use. <a href="https://simplefamilygames.com/privacy.html">Simple Family Games has its own privacy policy.</a></p>
 
-      <h2>2. Checklists stored on your device</h2>
+      <h2 id="local-data">2. Checklists stored on your device</h2>
       <p>List names, items, checked states, order, settings, and widget assignments are normally stored locally on your device. You can make and use core checklists without a Lew Labs account. Ordinary checklist use does not send your lists to the Simple Checklist backend. Android backup and restore settings on your device may affect copies of local app data.</p>
 
       <h2>3. Voice add, sharing, and widgets</h2>
@@ -32,36 +33,61 @@
       <p>When you share a list, your device sends it to the app or destination you choose. Importing a list creates a local copy after you confirm. Widgets show selected local list information on your home screen; reassigning a widget changes its local selection.</p>
       <p>In-app training and tutorial content is local to the app and does not make AI or network requests.</p>
 
-      <h2>4. Optional Pro AI Create</h2>
+      <h2 id="ai-create">4. Optional Pro AI Create</h2>
       <p>AI Create is optional. It uses the Simple Checklist backend and OpenAI to process content you deliberately submit. These features require an internet connection. AI-generated items are shown for review, editing, and selection before you save them to a new list or add them to an existing list.</p>
       <h3>Scan a List</h3>
       <p>You take a photo or choose one from your device. The selected image is sent securely through the Simple Checklist backend to OpenAI to recognize handwritten or printed list content. You can review and edit the resulting items before saving.</p>
       <h3>Describe a List</h3>
       <p>You may hold to record and release when finished, or type instead. A recording you choose to make is kept temporarily in app-private cache and sent securely through the Simple Checklist backend to OpenAI for transcription. The temporary AAC/M4A recording is cleaned up when the active flow ends, including after success, cancellation, or an error. You can review and edit the transcript. Only when you select <strong>Make My List</strong> is that text used for AI checklist generation. You then review the generated items before saving them.</p>
       <p>Avoid including sensitive information in a photo, recording, or typed description unless you want it processed for your list.</p>
+      <p>These requests are processed through our backend hosted on Google Cloud. The backend is not a cloud copy of your checklists. Scan and Describe use OpenAI; they are different from the handoff encoder below. We do not claim that provider processing or security records have zero retention. OpenAI and Google Cloud apply their own relevant processing and retention practices. Scan and list-generation requests disable stored Responses application state, but that does not disable all provider safety records. OpenAI documents default abuse-monitoring retention of up to 30 days, with legal and safety exceptions, and endpoint-specific rules for audio transcription. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API data controls</a>; this is separate from ChatGPT conversation retention. We do not claim an approved Zero Data Retention arrangement.</p>
 
-      <h2>5. Voluntary AI result reports</h2>
+      <h2 id="chatgpt">5. Works with ChatGPT handoffs</h2>
+      <p>When you ask a connected Simple Checklist plugin to prepare a handoff, ChatGPT sends the selected checklist items and any suggested title or destination name to the separate Lew Labs MCP service. That service temporarily validates the input and encodes a link. It does not call an AI inference provider, maintain a checklist database or history, create a Simple Checklist account, read existing lists from your device, or synchronize devices.</p>
+      <p>Checklist content is processed in memory for the request, not saved as a checklist on our server or included in normal application logs. Firebase Hosting routes the MCP hostname to Cloud Run. Firebase Hosting request-log export to our Cloud Logging project is disabled, and the service-specific Cloud Run request-log exclusion is enabled. These settings do not disable provider-side processing or all operational and security records. Google states that Firebase Hosting retains IP data for a few months for abuse detection and usage analysis; see <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. This is not a promise that cloud providers retain no technical metadata. ChatGPT and hosting providers process information under their own terms and retention practices. ChatGPT may retain relevant conversation context. This handoff is distinct from Scan and Describe processing above.</p>
+      <p>The resulting link contains Base64URL-encoded JSON. <strong>Encoding is not encryption: anyone with the complete link may decode its checklist content.</strong> Copies may remain in chats, messages, the clipboard or device/browser history. The fragment after # is not sent in a normal HTTP request to the fallback website, but the content was already sent to the MCP encoder. Handoff links do not expire. There is no server-side import token to expire or revoke; deleting a local list does not remove copies of its handoff link. Reopening a link requires fresh approval and approving it again may add duplicate items.</p>
+      <p>The app checks any suggested destination against local lists, without sending those local names back to ChatGPT or the handoff service. You review and explicitly approve an import. You can edit the suggestions, select another destination or cancel without changing lists. An “add to my list” request prepares proposed new items; the service cannot inspect, edit, delete or check off your existing items remotely. The link does not prove who authored its contents.</p>
+      <p>The approved product policy is a Free ChatGPT handoff, separate from Pro AI subscriptions. The encoder consumes no Scan, Describe or transcription quota and requires no Simple Checklist account. ChatGPT's own access and usage rules still apply.</p>
+      <div class="notice"><strong>Android availability:</strong> the Free handoff experience is included in Android 0.1.19+28, currently available to the existing Closed testing – Alpha group. It is not generally available. The older 0.1.18+27 release still checks Pro access. Importing requires a compatible Android release and your explicit approval.</div>
+      <p>Do not include credentials or unnecessary sensitive information in a handoff. Share complete links only with intended recipients. You can avoid the plugin, decline to share content, cancel an import, and manage local lists in the app. Contact us below with privacy questions; avoid sending complete private links to support.</p>
+
+      <h2>6. Voluntary AI result reports</h2>
       <p>If you report an AI result, the report may include a bounded portion of the AI-generated result text, the reason you select, an optional comment, app version, report or request metadata, and timestamps. The original Scan photo and voice recording are not attached to these reports. We use reports to review safety and quality. Reports are configured with server-created 30-day time-to-live (TTL) eligibility. Firestore deletes expired reports asynchronously, so deletion may occur after that date.</p>
 
-      <h2>6. Advertising and Pro</h2>
+      <h2 id="advertising">7. Advertising and Pro</h2>
       <p>Free users may see Google AdMob banner ads. Google and its advertising partners may process information such as device identifiers, IP address, approximate location inferred from IP address, ad interactions, diagnostics, and consent choices to serve and measure ads where allowed. The app uses Google's consent tooling where required. Pro users have an ad-free experience. Ad processing is separate from your locally stored list content.</p>
 
-      <h2>7. Service providers and technical data</h2>
+      <h2>8. Service providers and technical data</h2>
       <p>OpenAI processes content submitted to optional AI features under its applicable terms and policies, including its own processing and retention practices. Google AdMob and its consent tooling support Free-user advertising. The Simple Checklist backend and its cloud infrastructure handle optional AI requests and may process basic technical information needed to provide and secure the service, such as request IDs, timestamps, and network data. Android, Google Play, device speech services, and hosting providers may also process technical data under their own policies. We do not use ordinary checklist contents for advertising.</p>
+      <p>Google Cloud Run hosts the separate handoff encoder and AI backend. Google Firestore supports temporary closed-test authorization and abuse-control records, and the voluntary AI reports described above; it is not a synchronized checklist database. Closed-test access verification uses Google Play Integrity information about the app, its Play licensing and device integrity. Temporary challenges, sessions and counters have expiration controls; scheduled storage cleanup is asynchronous. These records are not permanent user accounts and do not contain your ordinary local lists.</p>
+      <p>The static website is hosted through GitHub Pages. Support or privacy email includes the address and information you choose to send and is processed through Google Workspace Gmail to deliver and handle your request. The owner of Lew Labs Apps LLC personally monitors support, privacy/deletion, and security/abuse correspondence; no other company staff currently handle it. Send only the information needed for your question. Lew Labs Apps LLC has adopted the manual correspondence retention and privacy-request procedure below.</p>
 
-      <h2>8. Your choices and deletion</h2>
-      <p>You can use core checklists without AI Create, choose whether to submit a photo or recording, type instead of recording, review AI output before saving, and choose whether to report a result. You can delete individual lists in the app. Clearing app data or uninstalling the app removes locally stored lists from that device, subject to Android backup and restore settings. For questions about an AI result report, contact us with its report or request ID if you have it.</p>
+      <h3 id="correspondence-retention">Correspondence retention</h3>
+      <p>No automated deletion has been configured; the owner follows the manual procedure below.</p>
+      <p>Our retention practice is to remove routine support correspondence from our active mailbox and owner-controlled working copies no later than 90 days after the case closes. For privacy or security cases, we retain only the information necessary to document the request, response and resolution for 12 months after closure. We keep unresolved cases until they are resolved and remove unnecessary attachments, private links and other sensitive content sooner when no longer needed.</p>
+      <p>The owner reviews eligible records manually each week. Necessary records subject to an applicable legal hold, legal obligation or ongoing investigation are kept for that purpose, with the reason and review date recorded, then deleted when the exception ends and the normal retention period has passed. Business and tax records have separate retention requirements; these periods are not a reason to keep every support message as a business record.</p>
+      <p>These periods govern records we control. Deleting mail does not immediately erase every copy held by a provider: Gmail Trash, administrator recovery, backups and any applicable retention or hold rules can retain information for additional periods. We cannot delete copies in another person's mailbox. The same distinction applies to independent provider security records and information you shared with other services.</p>
 
-      <h2>9. Children, security, and data sales</h2>
+      <h2 id="choices">9. Your choices and deletion</h2>
+      <p>You can use core checklists without AI Create, choose whether to submit a photo or recording, type instead of recording, review AI output before saving, and choose whether to report a result. You can delete individual lists and items from the active checklist collection in the app. The app keeps a previous local recovery snapshot, and older migrated data may remain in local storage; ordinary list deletion is not a secure erase of all local copies. Android backup, exported .sclist files and copies you shared are separate. Device-level removal of app storage is destructive and is not required to make a privacy request; back up anything you want to keep before using device controls. We cannot access or delete your local lists remotely.</p>
+      <p>For a ChatGPT handoff, you can decline the connected tool, cancel review or delete imported items locally. We cannot revoke a content-bearing link or erase copies held in another service. Manage your conversation history with ChatGPT and consult that provider's controls. Contact our privacy address for questions about information you deliberately sent to us; do not send credentials or unrelated private lists.</p>
+
+      <h3 id="privacy-requests">Privacy questions and deletion requests</h3>
+      <p>Contact <a href="mailto:privacy@lewlabsapps.com">privacy@lewlabsapps.com</a> to ask about or request deletion of information you deliberately sent to Lew Labs Apps LLC. State that your request concerns Simple Checklist and describe the records concerned, such as support correspondence or an AI result report. A report ID and approximate date can help if available. Do not send passwords, API keys, Play Integrity or session tokens, recordings, photos, full private handoff links or unrelated lists.</p>
+      <p>The owner will assess the request, ask only for information reasonably needed to locate the records and verify your authority, and explain the result and any applicable limits. Where records can be identified and deletion is appropriate, this may include correspondence, owner-controlled copies and identifiable AI result reports. If processing by a service provider is involved, we will use the available provider request process where applicable. We will explain any necessary legal or security retention and respond within applicable requirements. This is not a promise that all provider records can be located by email or erased immediately.</p>
+      <p>There is no Simple Checklist account to delete and no stored MCP checklist history to search. Temporary authorization records are not an email-indexed user profile. Deleting a local list does not remove exported files, Android backups, shared links or ChatGPT conversations. Use the relevant device or provider controls for those copies. The correspondence schedule above includes a minimal record of a privacy request and its resolution.</p>
+
+      <h2>10. Children, security, and data sales</h2>
       <p>Simple Checklist is a general-purpose utility and is not directed specifically to children under 13. We use secure transmission for optional AI requests and take reasonable steps to protect the information we handle, though no system can guarantee complete security. Lew Labs Apps does not sell personal information.</p>
+      <p>The deployed handoff service uses HTTPS, bounded input validation, request timeouts and rate limits. Normal handoff application logs contain fixed operation labels and status codes, not checklist text or encoded links. AI-backend logging is configured to redact content and credentials. These safeguards do not make a complete handoff link confidential or guarantee uninterrupted service.</p>
 
-      <h2>10. This website and policy changes</h2>
+      <h2>11. This website and policy changes</h2>
       <p>This website is a static information site without account sign-in or a contact form. Its hosting provider may process standard request information to deliver pages. If app features or data practices change, we will update this policy and its date here.</p>
 
-      <h2>11. Contact</h2>
+      <h2>12. Contact</h2>
       <p>Privacy: <a href="mailto:privacy@lewlabsapps.com">privacy@lewlabsapps.com</a><br>Support: <a href="mailto:support@lewlabsapps.com">support@lewlabsapps.com</a></p>
     </div></section>
   </main>
-  <footer class="footer"><div class="container footer-row"><div>© 2026 Lew Labs Apps.</div><div class="footer-links"><a href="index.html">Lew Labs Apps</a><a href="simple-checklist.html">Simple Checklist</a><a href="https://simplefamilygames.com/privacy.html">Family Games privacy</a><a href="support.html">Support</a><a href="mailto:privacy@lewlabsapps.com">Privacy contact</a></div></div></footer>
+  <footer class="footer"><div class="container footer-row"><div>© 2026 Lew Labs Apps.</div><div class="footer-links"><a href="index.html">Lew Labs Apps</a><a href="simple-checklist.html">Simple Checklist</a><a href="https://simplefamilygames.com/privacy.html">Family Games privacy</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="mailto:privacy@lewlabsapps.com">Privacy contact</a></div></div></footer>
 </body>
 </html>
